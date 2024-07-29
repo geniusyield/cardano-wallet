@@ -412,7 +412,7 @@ cardanoEraFromRecentEra
     :: RecentEra era
     -> CardanoApi.CardanoEra (CardanoApiEra era)
 cardanoEraFromRecentEra =
-    CardanoApi.shelleyBasedToCardanoEra
+    CardanoApi.toCardanoEra
     . shelleyBasedEraFromRecentEra
 
 shelleyBasedEraFromRecentEra
